@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExcelHelper", "ExcelHelper\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CfgHelper", "CfgHelper\CfgHelper.vcxproj", "{73F60F0C-A03F-494A-9FF5-50970A3EAFDB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tester", "Tester\Tester.vcxproj", "{2BE33417-B40A-497F-857D-B32935D2EC3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -37,6 +39,16 @@ Global
 		{73F60F0C-A03F-494A-9FF5-50970A3EAFDB}.Release|x64.Build.0 = Release|x64
 		{73F60F0C-A03F-494A-9FF5-50970A3EAFDB}.Release|x86.ActiveCfg = Release|Win32
 		{73F60F0C-A03F-494A-9FF5-50970A3EAFDB}.Release|x86.Build.0 = Release|Win32
+		{2BE33417-B40A-497F-857D-B32935D2EC3C}.Debug|ARM.ActiveCfg = Debug|Win32
+		{2BE33417-B40A-497F-857D-B32935D2EC3C}.Debug|x64.ActiveCfg = Debug|x64
+		{2BE33417-B40A-497F-857D-B32935D2EC3C}.Debug|x64.Build.0 = Debug|x64
+		{2BE33417-B40A-497F-857D-B32935D2EC3C}.Debug|x86.ActiveCfg = Debug|Win32
+		{2BE33417-B40A-497F-857D-B32935D2EC3C}.Debug|x86.Build.0 = Debug|Win32
+		{2BE33417-B40A-497F-857D-B32935D2EC3C}.Release|ARM.ActiveCfg = Release|Win32
+		{2BE33417-B40A-497F-857D-B32935D2EC3C}.Release|x64.ActiveCfg = Release|x64
+		{2BE33417-B40A-497F-857D-B32935D2EC3C}.Release|x64.Build.0 = Release|x64
+		{2BE33417-B40A-497F-857D-B32935D2EC3C}.Release|x86.ActiveCfg = Release|Win32
+		{2BE33417-B40A-497F-857D-B32935D2EC3C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
