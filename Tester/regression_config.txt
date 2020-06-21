@@ -1,0 +1,96 @@
+####################################################
+# set p4 info
+####################################################
+p4client   = Andrew-DBG
+p4passwd   = hWgroup
+p4user     = SH_ARCH1
+p4port     = zxshscm01.zhaoxin.com:2666
+p4port_hw  = zxshscm01.zhaoxin.com:1667
+
+
+####################################################
+# set yuv clip path. It could be a root path
+####################################################
+yuv_path   = \\videoserver-2\YUV 
+
+
+####################################################
+# set clip list file
+# for multiple files, you can separate them by ',' 
+####################################################
+HevcEnc_clips = HevcEnc_RateControl1_CHX004
+
+
+####################################################
+# set regression project name
+# projects we supported
+# 1. S3_Encoder_ref_E3k
+# 2. MS_Encoder
+# 3. X265_Encoder
+# 4. HM-16.0
+# 5. x264_20081022_ORIG
+# 6. JM_18_4
+####################################################
+regression_proj_name = S3_Encoder_ref_CHX004
+
+
+####################################################
+# compare last_ok_cl or not
+# 0: not compare
+# 1: cmpare
+####################################################
+compare_last_ok_cl = 0
+
+
+####################################################
+# run loop or not
+# 0: run once
+# 1: run loop
+####################################################
+run_loop = 0
+
+
+####################################################
+# auto update regression code/testplan/anchor or not
+# 0: not update
+# 1: auto update
+####################################################
+auto_update = 0
+
+
+####################################################
+# fast test mode. sync/rebuild or not
+# 0: normal run regression, sync and rebuild
+# 1: fast mode, no sync and no rebuild
+####################################################
+fast_mode = 1
+
+
+####################################################
+# reserve each clip's bitstream or not
+# 0: no
+# 1: yes
+####################################################
+dump_bitstream = 0 
+
+
+####################################################
+# just rebuild or not
+# 0: normal run regression
+# 1: just reuild project and get exes, 
+#    not run regression
+####################################################
+just_rebuild = 0 
+
+
+####################################################
+# exes path
+# 
+# -- if regression run on linux system, exes which 
+#    from windows system will be saved in this path
+#
+# -- if regression run on windeos path, exes will be
+#    copied to this path. The copy action will take 
+#    effect only when just_rebuild=1
+####################################################
+exe_path = D:\linux\linux-share

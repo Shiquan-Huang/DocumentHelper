@@ -8,6 +8,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CfgHelper", "CfgHelper\CfgHelper.vcxproj", "{73F60F0C-A03F-494A-9FF5-50970A3EAFDB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tester", "Tester\Tester.vcxproj", "{2BE33417-B40A-497F-857D-B32935D2EC3C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{73F60F0C-A03F-494A-9FF5-50970A3EAFDB} = {73F60F0C-A03F-494A-9FF5-50970A3EAFDB}
+		{D7A6F3C2-C49F-47C5-A4F3-9C102AF5D67A} = {D7A6F3C2-C49F-47C5-A4F3-9C102AF5D67A}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

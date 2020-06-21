@@ -1,0 +1,13 @@
+ProjecID        =   CHX004  //CHX001, CHX002, Elite3000, ZX2100
+CodecType       =   HevcEnc	// H264Enc, HevcEnc, VP8Enc, Mpeg2Enc, H263Enc,VC1Enc
+ProfilingType   =   BestQuality     // BestQuality, BestPerformance
+TestYuvListFile =   YuvFileList_RC
+Qp          =   22,26,30,34
+IntraPeriod     =   0   // 0: only 1st is I frame;  1: all frames are I frame; others: interval of I frame
+BFrameNum       =   0   // How many B frames are inserted between 2 continuous I / P frames
+EncFrameNum     =   30  // Total frames to be encoded
+MeAlgId         =   0x0 //,0x8000100501004320,0x8000200501004320,0x8000300501004320
+MinPriority     =   0   //generate test plan which's priority from MinPriority to MaxPriority
+MaxPriority     =   200
+EnRateCtrl	=   1 //Enable rate control
+CheckMD5    =   0

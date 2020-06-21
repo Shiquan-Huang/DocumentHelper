@@ -93,6 +93,20 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)\dll\$(PlatformName)\$(Configuration)" (
+    mkdir "$(SolutionDir)\dll\$(PlatformName)\$(Configuration)"
+)
+copy /y "$(TargetPath)" "$(SolutionDir)\dll\$(PlatformName)\$(Configuration)"
+if not exist "$(SolutionDir)\lib\$(PlatformName)\$(Configuration)" (
+    mkdir "$(SolutionDir)\lib\$(PlatformName)\$(Configuration)"
+)
+copy /y "$(OutputPath)$(ProjectName).lib" "$(SolutionDir)\lib\$(PlatformName)\$(Configuration)" 
+if not exist "$(SolutionDir)\include\$(ProjectName)" (
+    mkdir "$(SolutionDir)\include\$(ProjectName)"
+)
+copy /y "$(SolutionDir)$(ProjectName)\$(ProjectName).h" "$(SolutionDir)\include\$(ProjectName)" </Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -123,6 +137,20 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)\dll\$(PlatformName)\$(Configuration)" (
+    mkdir "$(SolutionDir)\dll\$(PlatformName)\$(Configuration)"
+)
+copy /y "$(TargetPath)" "$(SolutionDir)\dll\$(PlatformName)\$(Configuration)"
+if not exist "$(SolutionDir)\lib\$(PlatformName)\$(Configuration)" (
+    mkdir "$(SolutionDir)\lib\$(PlatformName)\$(Configuration)"
+)
+copy /y "$(OutputPath)$(ProjectName).lib" "$(SolutionDir)\lib\$(PlatformName)\$(Configuration)" 
+if not exist "$(SolutionDir)\include\$(ProjectName)" (
+    mkdir "$(SolutionDir)\include\$(ProjectName)"
+)
+copy /y "$(SolutionDir)$(ProjectName)\$(ProjectName).h" "$(SolutionDir)\include\$(ProjectName)" </Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
