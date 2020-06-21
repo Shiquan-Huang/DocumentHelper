@@ -20,5 +20,5 @@ public:
 	// TODO:  在此添加您的方法。
 	map<string, string> getKeyValue(string cfgFilePath);
 
-	int setKeyValue(string cfgFilePath);
+	int setKeyValue(string cfgFilePath, string strKey, string strVal);
 };
